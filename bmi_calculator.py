@@ -2,8 +2,14 @@ import sys
 
 print('Welcome to BMI calculator app')
 
-height = float(input("Enter your height in meters | Range 0-2.72 -- "))
-weight = float(input("Enter your weight | Range 1-700 -- "))
+# Exception handling reference : https://www.askpython.com/python/examples/handling-valueerror-detecting-strings-integers
+try:
+    height = float(input("Enter your height in meters | Range 0-2.72 -- "))
+    weight = float(input("Enter your weight | Range 1-700 -- "))
+except ValueError:
+    print(f"Invalid Input. Exiting from program")
+    sys.exit(0)
+
 
 if height<0 or height>2.72 or height is None:
     print("Invalid Entry. Exiting Program")
