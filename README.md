@@ -17,7 +17,6 @@ Enter your height in meters : 1.75
 Enter your weight in kilograms : 70
 Your BMI is 22.86. Your BMI category is Normal weight.
 
-
 ## Known limitations
 - The program requires height to be entered in meters and weight in kilograms.
 - The program does not currently support imperial units. 
